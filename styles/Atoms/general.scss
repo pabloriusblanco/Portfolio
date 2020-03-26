@@ -1,0 +1,310 @@
+.mainbody {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+///////////////////////
+/////PRESENTACION/////
+///////////////////////
+
+.presentacion_contenedor {
+  height: 85vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .nombre_contenedor {
+    display: flex;
+    opacity: 0;
+    .nombreprb {
+      text-align: center;
+      color: $lightyellow;
+      font-family: $montserrat;
+      font-size: 3em;
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+  .posicionesseparador {
+    opacity: 0;
+    width: 100%;
+    background-color: $lightyellow;
+    margin: 0.3em 0;
+    .posiciones_texto {
+      text-align: center;
+      color: $negrofondo;
+      font-family: $bench;
+      margin: 2px 0px;
+    }
+  }
+  .redes_contenedor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    .contenedor_logo_presentacion {
+      transform: translate(100vw);
+      margin: 0.2em 1em;
+    i {
+      cursor: pointer;
+      color: $lightyellow;
+      font-size: 2em;
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+  }
+}
+
+///////////////////////
+///////PROYECTOS///////
+///////////////////////
+
+.proyectos_contenedor {
+  background-color: $lightyellow;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .subtitulo {
+    padding: 3em 0px 0px 0px;
+  }
+  .proyectocontenedor {
+    width: 80%;
+    margin-bottom: 2em;
+    margin-top: 4em;
+    .proyectonombrecontenedor {
+      .nombreproyecto {
+        margin: 12px;
+        text-align: center;
+        font-family: $montserrat;
+        font-size: 1em;
+        font-weight: 600;
+        color: $negrofondo;
+      }
+    }
+    .contenidoproyecto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .contenedorgifproyecto {
+        opacity: 0;
+        width: 95%;
+        height: 30vh;
+        background-color: $negrofondo;
+        border-radius: 15px;
+      }
+      .tecnologiasutilizadas {
+        width: 95%;
+        border-top: 2px solid $negrofondo;
+        border-bottom: 2px solid $negrofondo;
+        display: flex;
+        justify-content: center;
+        i {
+          color: $negrofondo;
+          margin: 8px 0.5em;
+          font-size: 2em;
+        }
+      }
+      .textoproyecto_contenedor {
+        width: 95%;
+      }
+      .contenedorlinks {
+        .contenedorlink {
+          i {
+            color: $lightyellow;
+          }
+          .fa-github-square {
+            font-size: 20px;
+          }
+          .fa-laptop {
+            transform: translateY(3px);
+          }
+          a {
+            color: $lightyellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////
+///////ABOUT ME///////
+///////////////////////
+
+.aboutme_contenedor {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+//  padding-bottom: 5em;
+  .nombreabout_contenedor {
+    padding: 3em 0 0 0;
+    margin: 0 0 3em 0;
+    .nombreabout {
+      color: $lightyellow;
+    }
+  }
+  .vectorialprb_contenedor {
+    .circulocontenedor {
+      background-color: $lightyellow;
+      border-radius: 50%;
+      width: 80vw;
+      height: 80vw;
+      display: flex;
+      justify-content: center;
+      .vectorialprb {
+        width: 65%;
+      }
+    }
+  }
+  .contenedorlinksaboutme {
+    margin: 2em 0;
+    border-top: 2px solid $lightyellow;
+    border-bottom: 2px solid $lightyellow;
+    display: flex;
+    justify-content: center;
+    background-color: $lightyellow;
+    width: 100%;
+    .contenedorlink {
+      background-color: transparent;
+      padding: none;
+      border-radius: 0px;
+      transition: transform 0.3s ease;
+      margin: 0 2vw;
+      i {
+        color: $negrofondo;
+      }
+      a {
+        color: $negrofondo;
+        font-weight: 600;
+      }
+    }
+  }
+  .textoabout_contenedor {
+    width: 90%;
+    .texto {
+      margin: 0;
+      color: $lightyellow;
+      font-weight: 400;
+    }
+  }
+}
+
+///////////////////////
+///////CONTACTO///////
+///////////////////////
+
+.contacto_contenedor {
+  background-color: $lightyellow;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  .contactonombre_contenedor {
+    padding-top: 3em;
+    margin-bottom: 3em;
+  }
+  .logoytexto_contenedor {
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    .contenedorlogomail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 12px;
+      border-right: 2px solid $negrofondo;
+      .fas {
+        font-size: 3em;
+        color: $negrofondo;
+      }
+    }
+    .textocontacto {
+      span {
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+  .emailboton_contenedor {
+    margin: 2em 0;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $negrofondo;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    .email {
+      margin: 0 2vw;
+      text-align: center;
+      color: $lightyellow;
+      font-family: $bench;
+      margin: 0 2vw;
+      font-size: 1.5em;
+    }
+    .botoncopiar {
+      margin: 0 2vw;
+      cursor: pointer;
+      .fas {
+        font-size: 1.5em;
+        color: $lightyellow;
+        &:hover {
+          -webkit-animation: pulsacion 0.5s ease-in-out infinite both;
+          animation: pulsacion 0.5s ease-in-out infinite both;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////
+//////SEPARADORES/////
+///////////////////////
+
+.separador1_contenedor {
+  bottom: -1px;
+  height: 15vh;
+  position: relative;
+  .separador1 {
+    background-image: url("../img/1-1.svg");
+  }
+  .separador2 {
+    background-image: url("../img/1-2.svg");
+  }
+  .separador3 {
+    background-image: url("../img/1-3.svg");
+  }
+}
+
+
+.separador2_contenedor {
+  background-color: $lightyellow;
+  bottom: 0px;
+  position: relative;
+  .separador {
+    bottom: -1px;
+  }
+  .separador1 {
+    background-image: url("../img/2-1.svg");
+  }
+  .separador2 {
+    background-image: url("../img/2-2.svg");
+  }
+  .separador3 {
+    background-image: url("../img/2-3.svg");
+  }
+}
