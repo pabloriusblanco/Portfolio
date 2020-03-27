@@ -30,9 +30,6 @@
     .contenedorlinks .contenedorlink i {
       margin-right: 0.5em;
       height: 100%; }
-      .contenedorlinks .contenedorlink i:hover {
-        -webkit-animation: rotacion 0.6s ease-in-out both;
-        animation: rotacion 0.6s ease-in-out both; }
     .contenedorlinks .contenedorlink a {
       font-family: "Montserrat", sans-serif;
       text-decoration: none;
@@ -49,20 +46,6 @@
   font-weight: 300;
   color: #1e1e1e; }
 
-@-webkit-keyframes rotacion {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-@keyframes rotacion {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
 @-webkit-keyframes pulsacion {
   0% {
     -webkit-transform: scale(1);
@@ -284,6 +267,38 @@
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1; } }
+.cierreonhover:hover {
+  -webkit-animation: cierreonhover 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: cierreonhover 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes cierreonhover {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+@keyframes cierreonhover {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+.hoverIconos {
+  -webkit-animation: rotacion 0.6s ease-in-out;
+  animation: rotacion 0.6s ease-in-out both; }
+
+@-webkit-keyframes rotacion {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes rotacion {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 html {
   scroll-behavior: smooth; }
 
@@ -591,12 +606,26 @@ footer {
       flex-direction: column;
       align-items: center; }
       .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto {
+        cursor: pointer;
         opacity: 0;
         border-radius: 15px;
         width: 80vw;
         -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
         overflow: hidden; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .cierreonhover {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #1e1e1e; }
+          .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .cierreonhover .fa-play {
+            opacity: 0.5;
+            color: #fffaec;
+            font-size: 3em; }
         .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .preview {
           height: 100%;
           width: 100%; }
