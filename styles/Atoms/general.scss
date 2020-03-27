@@ -98,10 +98,15 @@
       align-items: center;
       .contenedorgifproyecto {
         opacity: 0;
-        width: 95%;
-        height: 30vh;
-        background-color: $negrofondo;
         border-radius: 15px;
+        width: 80vw;
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        overflow: hidden;
+        .preview {
+          height: 100%;
+          width: 100%;
+        }
       }
       .tecnologiasutilizadas {
         width: 95%;

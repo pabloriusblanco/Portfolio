@@ -592,10 +592,14 @@ footer {
       align-items: center; }
       .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto {
         opacity: 0;
-        width: 95%;
-        height: 30vh;
-        background-color: #1e1e1e;
-        border-radius: 15px; }
+        border-radius: 15px;
+        width: 80vw;
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        overflow: hidden; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .preview {
+          height: 100%;
+          width: 100%; }
       .proyectos_contenedor .proyectocontenedor .contenidoproyecto .tecnologiasutilizadas {
         width: 95%;
         border-top: 2px solid #1e1e1e;
