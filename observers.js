@@ -14,7 +14,7 @@ function observadores() {
             }
             else {
                 entry.target.classList.add("opacidad_escala")
-                entry.target.children[0].style.display = "flex";
+                entry.target.children[1].style.display = "flex";
                 apareceConScroll.unobserve(entry.target);
             }
         });

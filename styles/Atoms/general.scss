@@ -56,19 +56,19 @@
       width: 80vw;
       transform: translate(100vw);
       margin: 0.5em 0;
-    h4 {
-      cursor: pointer;
-      font-family: $montserrat;
-      color: $lightyellow;
-      font-size: 0.8em;
-      opacity: 0.5;
-      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out ;
-      &:hover {
-        transform: scale(1.25);
-        opacity: 1;
+      h4 {
+        cursor: pointer;
+        font-family: $montserrat;
+        color: $lightyellow;
+        font-size: 0.8em;
+        opacity: 0.5;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.25);
+          opacity: 1;
+        }
       }
     }
-  }
   }
 }
 
@@ -105,26 +105,43 @@
       align-items: center;
       .contenedorgifproyecto {
         display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         opacity: 0;
         border-radius: 15px;
         width: 80vw;
         -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        .cortina_preview {
+          overflow: hidden;
+          position: absolute;
+          display: none;
+          height: 100%;
+          width: 100%;
+          border-radius: 15px;
+          .cortinaNegra_preview {
+            border-radius: 15px;
+            opacity: 1;
+            height: 100%;
+            width: 100%;
+            background-color: $negrofondo;
+          }
+        }
         .videoOpacity {
           position: absolute;
           display: none;
           align-items: center;
           justify-content: center;
           opacity: 0;
-          height: 100%;
-          width: 100%;
+          height: 30%;
+          width: 30%;
           background-color: $negrofondo;
           border-radius: 15px;
           .fa-play {
             opacity: 0.5;
             color: $lightyellow;
-            font-size: 3em;
+            font-size: 5vw;
           }
         }
         .preview {
@@ -157,7 +174,7 @@
             font-size: 20px;
           }
           .fa-laptop {
-            transform: translateY(3px);
+            translate: 0px 3px;
           }
           a {
             color: $lightyellow;
@@ -178,7 +195,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-//  padding-bottom: 5em;
+  //  padding-bottom: 5em;
   .nombreabout_contenedor {
     padding: 3em 0 0 0;
     margin: 0 0 3em 0;
@@ -319,7 +336,6 @@
     background-image: url("../img/1-3.svg");
   }
 }
-
 
 .separador2_contenedor {
   background-color: $lightyellow;
