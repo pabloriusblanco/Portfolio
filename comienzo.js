@@ -12,7 +12,7 @@ function tipeoOnLoad() {
         document.querySelector(".saltar_contenedor").style.display = "flex";
         document.querySelector(".saltar_contenedor").setAttribute("class", "saltar_contenedor opacidad1");
         document.querySelector(".saltar_contenedor").addEventListener("click", function () {
-        skip();
+            skip();
         })
     };
 }
@@ -94,6 +94,7 @@ function skip() {
             document.querySelector(".fondorojo").setAttribute("class", "fondorojo opacidad3");
             document.querySelector(".mainbody").style.display = "flex";
             document.querySelector(".comienzo_contenedor").style.display = "none";
+            document.querySelector(".mainbody").setAttribute("class", "mainbody aparece3");
             presentacionEstilos();
             setTimeout(() => {
                 document.querySelector(".cortina").style.display = "none";

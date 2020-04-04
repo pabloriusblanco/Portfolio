@@ -207,6 +207,30 @@
   }
 }
 
+///OPACIDAD 3 seg
+.aparece3 {
+  -webkit-animation: aparece3 3s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+  animation: aparece3 3s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+}
+
+@-webkit-keyframes aparece3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparece3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 ///OPACIDAD 1 seg INFINITO
 .opacidad1 {
   -webkit-animation: opacidad1seg 2s ease-in-out infinite;
