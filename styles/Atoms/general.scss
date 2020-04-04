@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   display: none;
+  overflow: hidden;
 }
 
 ///////////////////////
@@ -110,17 +111,16 @@
         width: 80vw;
         -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-        overflow: hidden;
-        .cierreonhover {
+        .videoOpacity {
           position: absolute;
-          display: flex;
+          display: none;
           align-items: center;
           justify-content: center;
           opacity: 0;
           height: 100%;
           width: 100%;
-          height: fit-content;
           background-color: $negrofondo;
+          border-radius: 15px;
           .fa-play {
             opacity: 0.5;
             color: $lightyellow;
@@ -130,6 +130,7 @@
         .preview {
           height: 100%;
           width: 100%;
+          border-radius: 15px;
         }
       }
       .tecnologiasutilizadas {

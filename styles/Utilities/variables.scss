@@ -86,57 +86,6 @@ $bold: 300;
 ///////ANIMACIONES/////
 ///////////////////////
 
-////HOVER LOGO
-// %colorcambioblanco {
-//   -webkit-animation: hoverlogoblanco 2s infinite;
-//   -moz-animation: hoverlogoblanco 2s infinite;
-//   -o-animation: hoverlogoblanco infinite;
-//   -ms-animation: hoverlogoblanco 2s infinite;
-//   animation: hoverlogoblanco 2s infinite;
-// }
-
-// %colorcambionegro {
-//   -webkit-animation: hoverlogonegro 2s infinite;
-//   -moz-animation: hoverlogonegro 2s infinite;
-//   -o-animation: hoverlogonegro infinite;
-//   -ms-animation: hoverlogonegro 2s infinite;
-//   animation: hoverlogonegro 2s infinite;
-// }
-
-
-
-// @keyframes hoverlogoblanco {
-//   0% { color: #fffaec; }
-//   50% { color: #ffffff; }
-//   100% { color: #fffaec; }
-// }
-// @-webkit-keyframes hoverlogoblanco {
-//   0% { color: #fffaec; }
-//   50% { color: #ffffff; }
-//   100% { color: #fffaec; }
-// }
-// @-moz-keyframes hoverlogoblanco {
-//   0% { color: #fffaec; }
-//   50% { color: #ffffff; }
-//   100% { color: #fffaec; }
-// }
-
-// @keyframes hoverlogonegro {
-//   0% { color: $negrofondo; }
-//   50% { color: #000; }
-//   100% { color: $negrofondo; }
-// }
-// @-webkit-keyframes hoverlogonegro {
-//   0% { color: $negrofondo; }
-//   50% { color: #000; }
-//   100% { color: $negrofondo; }
-// }
-// @-moz-keyframes hoverlogonegro {
-//   0% { color: $negrofondo; }
-//   50% { color: #000; }
-//   100% { color: $negrofondo; }
-// }
-
 ///// PULSACION
 
  @-webkit-keyframes pulsacion {

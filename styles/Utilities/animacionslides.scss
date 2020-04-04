@@ -228,14 +228,46 @@
 ///////CIERRE PREVIEW//////
 ///////////////////////////
 
-.cierreonhover {
+.videoOpacity {
+  -webkit-animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
   &:hover {
-    -webkit-animation: cierreonhover 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: cierreonhover 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    -webkit-animation: videoOpacity_hover 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: videoOpacity_hover 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
 }
 
-@-webkit-keyframes cierreonhover {
+@-webkit-keyframes videoOpacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes videoOpacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes videoOpacity_hover {
   0% {
     opacity: 0;
   }
@@ -243,7 +275,7 @@
     opacity: 0.5;
   }
 }
-@keyframes cierreonhover {
+@keyframes videoOpacity_hover {
   0% {
     opacity: 0;
   }

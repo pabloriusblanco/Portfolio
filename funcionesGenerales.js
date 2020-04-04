@@ -9,10 +9,10 @@ function listeners() {
 }
 
 function reproduccionGifs() {
-    let proyectos =  Array.from(document.getElementsByClassName("contenedorgifproyecto"));
-    for (let index = 0; index < proyectos.length; index++) {
-        proyectos[index].addEventListener("click", function () {
-            console.log("proyecto" + index)
+    let previews =  Array.from(document.getElementsByClassName("videoOpacity"));
+    for (let index = 0; index < previews.length; index++) {
+        previews[index].addEventListener("click", function () {
+            console.log("previews" + index)
         })
     }
 }
