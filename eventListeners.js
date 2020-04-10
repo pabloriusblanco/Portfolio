@@ -4,51 +4,72 @@ function listeners() {
 }
 
 function reproduccionGifs() {
-    let previews =  Array.from(document.getElementsByClassName("contenedorgifproyecto"));
-    for (let index = 0; index < previews.length; index++) {
-        previews[index].addEventListener("click", function () {
+    let previews = Array.from(document.getElementsByClassName("contenedorgifproyecto"));
+    for (let index = 0; index < 2; index++) {
+        previews[index].addEventListener("click", function listenerStartGif() {
             startGif(index, previews);
+            previews[index].removeEventListener("click", listenerStartGif);
         })
     }
 }
 
 function startGif(numero, previewArray) {
-        previewArray[numero].children[0].children[0].classList.add("slideDeArriba");
-        previewArray[numero].children[0].style.display = "block";
-        previewArray[numero].children[1].classList.add = "desaparece1s";
+    previewArray[numero].children[0].children[0].classList.remove("slideDeArribaStart");
+    previewArray[numero].children[0].children[0].classList.remove("slideDeArribaEnd");
+    previewArray[numero].children[0].children[0].classList.add("slideDeArribaStart");
+    previewArray[numero].children[1].style.display = "none"; /// REMUEVE EL BOTON PLAY
+    setTimeout(() => {
+        gifPreviewDinamico(previewArray, numero);
+        previewArray[numero].children[0].children[0].classList.add("slideDeArribaEnd");
         setTimeout(() => {
-            previewArray[numero].children[2].src = "/img/podcast.gif";
-            setTimeout(() => {
-                previewArray[numero].children[0].style.display = "none";
-            }, 1000);
-        }, 2000);
+            remueveGifPreview(numero, previewArray);
+        }, 3000);
+    }, 2000);
 }
+
+function remueveGifPreview(numero, previewArray) {
+    previewArray[numero].addEventListener("click", function listenerRemueveGifPreview() {
+        previewArray[numero].children[0].children[0].classList.remove("slideDeArribaStart");
+        previewArray[numero].children[0].children[0].classList.remove("slideDeArribaEnd");
+        previewArray[numero].removeEventListener("click", listenerRemueveGifPreview);
+        previewArray[numero].children[0].children[0].classList.add("slideDeArribaStart");
+        previewArray[numero].children[1].style.display = "none"; /// NO DEVUELVE EL BOTON PLAY
+        setTimeout(() => {
+            previewArray[numero].children[2].remove();
+            previewArray[numero].children[0].children[0].classList.add("slideDeArribaEnd");
+            reproduccionGifs();
+
+        }, 2000);
+    });
+};
+
+
 
 //////////////////////
 /////// HOVERS ///////
 //////////////////////
 
-function hoversConectados(){
-        let botonesLinks = Array.from(document.getElementsByClassName("contenedorlink"));
-        for (let index = 0; index < botonesLinks.length; index++) {
-            botonesLinks[index].addEventListener("mouseenter", function () {
-                botonesLinks[index].children[0].classList.add("hoverIconos");
+function hoversConectados() {
+    let botonesLinks = Array.from(document.getElementsByClassName("contenedorlink"));
+    for (let index = 0; index < botonesLinks.length; index++) {
+        botonesLinks[index].addEventListener("mouseenter", function () {
+            botonesLinks[index].children[0].classList.add("hoverIconos");
+        })
+        botonesLinks[index].addEventListener("mouseleave", function () {
+            botonesLinks[index].children[0].classList.remove("hoverIconos");
+        })
+    }
+
+    let playOnHover = Array.from(document.getElementsByClassName("contenedorgifproyecto"));
+    for (let index = 0; index < playOnHover.length; index++) {
+        if (playOnHover[index].children[0].style.display != "flex") { ////////////REVISAR
+            playOnHover[index].addEventListener("mouseenter", function () {
+                playOnHover[index].children[1].classList.add("videoOpacityHover");
             })
-            botonesLinks[index].addEventListener("mouseleave", function () {
-                botonesLinks[index].children[0].classList.remove("hoverIconos");
-            })            
+            playOnHover[index].addEventListener("mouseleave", function () {
+                playOnHover[index].children[1].classList.remove("videoOpacityHover");
+            })
         }
-        
-        let playOnHover = Array.from(document.getElementsByClassName("contenedorgifproyecto"));
-        for (let index = 0; index < playOnHover.length; index++) {
-            if (playOnHover[index].children[0].style.display != "block") { ////////////REVISAR
-                playOnHover[index].addEventListener("mouseenter", function () {
-                    playOnHover[index].children[1].classList.add("videoOpacityHover");
-                })
-                playOnHover[index].addEventListener("mouseleave", function () {
-                    playOnHover[index].children[1].classList.remove("videoOpacityHover");
-                })   
-            }
-        }
+    }
 }
 

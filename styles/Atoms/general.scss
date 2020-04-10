@@ -116,11 +116,13 @@
         .cortina_preview {
           overflow: hidden;
           position: absolute;
-          display: none;
+          display: block;
           height: 100%;
           width: 100%;
           border-radius: 15px;
           .cortinaNegra_preview {
+            z-index: 999;
+            transform: translateY(-100%); ///TEST
             border-radius: 15px;
             opacity: 1;
             height: 100%;
@@ -178,6 +180,39 @@
           }
           a {
             color: $lightyellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+///TERCER PROYECTO
+.mainbody {
+  .proyectos_contenedor {
+    .proyectocontenedor {
+      .contenidoproyecto3 {
+        .contenedorgifproyecto3 {
+          cursor: unset;
+          .videoOpacity {
+            position: absolute;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            width: auto;
+            height: 30%;
+            background-color: $negrofondo;
+            border-radius: 15px;
+            p {
+              margin: 0 1em;
+              opacity: 1;
+              color: $lightyellow;
+              text-transform: uppercase;
+              font-family: $montserrat;
+              font-size: 0.8em;
+              font-weight: 600;
+            }
           }
         }
       }

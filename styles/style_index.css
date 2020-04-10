@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   border: 0;
@@ -74,27 +75,57 @@
     opacity: 0; }
   100% {
     opacity: 0; } }
-.slideDeArriba {
-  -webkit-animation: slideDeArriba 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slideDeArriba 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+.slideDeArribaStart {
+  -webkit-animation: slideDeArribaStart 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slideDeArribaStart 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
-@-webkit-keyframes slideDeArriba {
+@-webkit-keyframes slideDeArribaStart {
   0% {
-    -webkit-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-    opacity: 0; }
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    opacity: 1; }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
     opacity: 1; } }
-@keyframes slideDeArriba {
+@keyframes slideDeArribaStart {
   0% {
-    -webkit-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-    opacity: 0; }
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    opacity: 1; }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1; } }
+.slideDeArribaEnd {
+  -webkit-animation: slideDeArribaEnd 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slideDeArribaEnd 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slideDeArribaEnd {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1; }
+  75% {
+    -webkit-transform: translateY(-75%);
+    transform: translateY(-75%);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    opacity: 1; } }
+@keyframes slideDeArribaEnd {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1; }
+  75% {
+    -webkit-transform: translateY(-75%);
+    transform: translateY(-75%);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
     opacity: 1; } }
 .hamaca_adelante {
   -webkit-animation: hamaca_adelante 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
@@ -250,8 +281,8 @@
     filter: blur(0px);
     opacity: 1; } }
 .videoOpacity {
-  -webkit-animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite both;
-  animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite both; }
+  -webkit-animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite; }
 
 .videoOpacityHover {
   -webkit-animation: videoOpacity_hover 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -365,6 +396,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.texto {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  /* Sólo WebKit -NO DOCUMENTADO */
+  -ms-hyphens: auto;
+  /* Guiones para separar en sílabas */
+  -moz-hyphens: auto;
+  /*  depende de lang en <html>      */
+  -webkit-hyphens: auto;
+  hyphens: auto; }
 
 footer {
   width: 90%;
@@ -698,11 +741,13 @@ footer {
         .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .cortina_preview {
           overflow: hidden;
           position: absolute;
-          display: none;
+          display: block;
           height: 100%;
           width: 100%;
           border-radius: 15px; }
           .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .cortina_preview .cortinaNegra_preview {
+            z-index: 999;
+            transform: translateY(-100%);
             border-radius: 15px;
             opacity: 1;
             height: 100%;
@@ -746,6 +791,27 @@ footer {
         translate: 0px 3px; }
       .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorlinks .contenedorlink a {
         color: #fffaec; }
+
+.mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 {
+  cursor: unset; }
+  .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    width: auto;
+    height: 30%;
+    background-color: #1e1e1e;
+    border-radius: 15px; }
+    .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity p {
+      margin: 0 1em;
+      opacity: 1;
+      color: #fffaec;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.8em;
+      font-weight: 600; }
 
 .aboutme_contenedor {
   width: 80%;

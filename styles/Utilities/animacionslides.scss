@@ -46,32 +46,72 @@
 
 /////SLIDE DESDE ARRIBA PARA GIF PREVIEW
 
-.slideDeArriba {
-	-webkit-animation: slideDeArriba 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slideDeArriba 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.slideDeArribaStart {
+	-webkit-animation: slideDeArribaStart 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slideDeArribaStart 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
- @-webkit-keyframes slideDeArriba {
+ @-webkit-keyframes slideDeArribaStart {
   0% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
-    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
     opacity: 1;
   }
 }
-@keyframes slideDeArriba {
+@keyframes slideDeArribaStart {
   0% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
-    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.slideDeArribaEnd {
+	-webkit-animation: slideDeArribaEnd 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slideDeArribaEnd 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slideDeArribaEnd {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+@keyframes slideDeArribaEnd {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
     opacity: 1;
   }
 }
@@ -284,8 +324,8 @@
 ///////////////////////////
 
 .videoOpacity {
-  -webkit-animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite both;
-  animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite both;
+  -webkit-animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation: videoOpacity 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
 }
 
 .videoOpacityHover {
