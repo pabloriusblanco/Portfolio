@@ -14,7 +14,7 @@ function navegacionPresentacion() {
     subtitulos = Array.from(document.getElementsByClassName("textosubtitulo"));
     for (let index = 0; index < 3; index++) {
         navpresentacion[index].addEventListener("click", function () {
-            subtitulos[index].scrollIntoView({behavior: "smooth", block: "center"});
+            subtitulos[index].scrollIntoView({behavior: "smooth"});
         });
     };
 };
