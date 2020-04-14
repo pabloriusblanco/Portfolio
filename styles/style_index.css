@@ -849,40 +849,48 @@ footer {
     margin: 0 0 3em 0; }
     .aboutme_contenedor .nombreabout_contenedor .nombreabout {
       color: #fffaec; }
-  .aboutme_contenedor .vectorialprb_contenedor .circulocontenedor {
-    background-color: #fffaec;
-    border-radius: 50%;
-    width: 80vw;
-    height: 80vw;
+  .aboutme_contenedor .contenido_aboutme {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center; }
-    .aboutme_contenedor .vectorialprb_contenedor .circulocontenedor .vectorialprb {
-      width: 65%; }
-  .aboutme_contenedor .contenedorlinksaboutme {
-    margin: 2em 0;
-    border-top: 2px solid #fffaec;
-    border-bottom: 2px solid #fffaec;
-    display: flex;
-    justify-content: center;
-    background-color: #fffaec;
-    width: 100%; }
-    .aboutme_contenedor .contenedorlinksaboutme .contenedorlink {
-      background-color: transparent;
-      padding: none;
-      border-radius: 0px;
-      transition: transform 0.3s ease;
-      margin: 0 2vw; }
-      .aboutme_contenedor .contenedorlinksaboutme .contenedorlink i {
-        color: #1e1e1e; }
-      .aboutme_contenedor .contenedorlinksaboutme .contenedorlink a {
-        color: #1e1e1e;
-        font-weight: 600; }
-  .aboutme_contenedor .textoabout_contenedor {
-    width: 90%; }
-    .aboutme_contenedor .textoabout_contenedor .texto {
-      margin: 0;
-      color: #fffaec;
-      font-weight: 400; }
+    .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
+      background-color: #fffaec;
+      border-radius: 50%;
+      width: 80vw;
+      height: 80vw;
+      display: flex;
+      justify-content: center; }
+      .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor .vectorialprb {
+        width: 65%; }
+    .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinksaboutme {
+        margin: 2em 0;
+        display: flex;
+        justify-content: center;
+        background-color: #fffaec;
+        width: 100%; }
+        .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinksaboutme .contenedorlink {
+          background-color: transparent;
+          padding: 0.5em 0.5em;
+          border-radius: 0px;
+          transition: transform 0.3s ease;
+          margin: 0 2vw; }
+          .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinksaboutme .contenedorlink i {
+            color: #1e1e1e; }
+          .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinksaboutme .contenedorlink a {
+            color: #1e1e1e;
+            font-weight: 600; }
+      .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .textoabout_contenedor {
+        width: 90%; }
+        .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .textoabout_contenedor .texto {
+          margin: 0;
+          color: #fffaec;
+          font-weight: 400; }
 
 .contacto_contenedor {
   background-color: #fffaec;
@@ -965,5 +973,40 @@ footer {
     background-image: url("../img/2-2.svg"); }
   .separador2_contenedor .separador3 {
     background-image: url("../img/2-3.svg"); }
+
+@media only all and (min-width: 600px) {
+  .comienzo_contenedor .comienzotexto_contenedor .textopredeterminado {
+    transform: translateY(75%);
+    position: relative;
+    width: 50%;
+    height: 50%; }
+
+  .subtitulo .textosubtitulo {
+    font-size: 2.5em; }
+
+  .aboutme_contenedor .contenido_aboutme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
+      width: 40vw;
+      height: 40vw;
+      margin-right: 1em; }
+    .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinksaboutme {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0 1em 0; }
+        .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinksaboutme .contenedorlink {
+          background-color: transparent;
+          padding: 0.5em 0.5em;
+          border-radius: 0px;
+          transition: transform 0.3s ease;
+          margin: 0 0; } }
 
 /*# sourceMappingURL=style_index.css.map */

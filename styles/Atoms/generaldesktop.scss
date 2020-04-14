@@ -1,0 +1,59 @@
+/////////////////////////////////////
+///////////////TABLETS///////////////
+/////////////////////////////////////
+
+@media only all and (min-width: 600px) {
+  ///////////////////////
+  ///////ABOUT ME///////
+  ///////////////////////
+  .comienzo_contenedor {
+    .comienzotexto_contenedor {
+      .textopredeterminado {
+        transform: translateY(75%);
+        position: relative;
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+
+  .subtitulo {
+    .textosubtitulo {
+      font-size: 2.5em;
+    }
+  }
+
+  .aboutme_contenedor {
+    .contenido_aboutme {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .vectorialprb_contenedor {
+        .circulocontenedor {
+          width: 40vw;
+          height: 40vw;
+          margin-right: 1em;
+        }
+      }
+      .contenedor_linksytexto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .contenedorlinksaboutme {
+          display: flex;
+          justify-content: space-around;
+          margin: 0 0 1em 0;
+          .contenedorlink {
+            background-color: transparent;
+            padding: 0.5em 0.5em;
+            border-radius: 0px;
+            transition: transform 0.3s ease;
+            margin: 0 0;
+          }
+        }
+      }
+    }
+  }
+}

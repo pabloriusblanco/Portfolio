@@ -240,48 +240,58 @@
       color: $lightyellow;
     }
   }
-  .vectorialprb_contenedor {
-    .circulocontenedor {
-      background-color: $lightyellow;
-      border-radius: 50%;
-      width: 80vw;
-      height: 80vw;
-      display: flex;
-      justify-content: center;
-      .vectorialprb {
-        width: 65%;
-      }
-    }
-  }
-  .contenedorlinksaboutme {
-    margin: 2em 0;
-    border-top: 2px solid $lightyellow;
-    border-bottom: 2px solid $lightyellow;
+  .contenido_aboutme {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background-color: $lightyellow;
-    width: 100%;
-    .contenedorlink {
-      background-color: transparent;
-      padding: none;
-      border-radius: 0px;
-      transition: transform 0.3s ease;
-      margin: 0 2vw;
-      i {
-        color: $negrofondo;
-      }
-      a {
-        color: $negrofondo;
-        font-weight: 600;
+    .vectorialprb_contenedor {
+      .circulocontenedor {
+        background-color: $lightyellow;
+        border-radius: 50%;
+        width: 80vw;
+        height: 80vw;
+        display: flex;
+        justify-content: center;
+        .vectorialprb {
+          width: 65%;
+        }
       }
     }
-  }
-  .textoabout_contenedor {
-    width: 90%;
-    .texto {
-      margin: 0;
-      color: $lightyellow;
-      font-weight: 400;
+    .contenedor_linksytexto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .contenedorlinksaboutme {
+        margin: 2em 0;
+        display: flex;
+        justify-content: center;
+        background-color: $lightyellow;
+        width: 100%;
+        .contenedorlink {
+          background-color: transparent;
+          padding: 0.5em 0.5em;
+          border-radius: 0px;
+          transition: transform 0.3s ease;
+          margin: 0 2vw;
+          i {
+            color: $negrofondo;
+          }
+          a {
+            color: $negrofondo;
+            font-weight: 600;
+          }
+        }
+      }
+      .textoabout_contenedor {
+        width: 90%;
+        .texto {
+          margin: 0;
+          color: $lightyellow;
+          font-weight: 400;
+        }
+      }
     }
   }
 }

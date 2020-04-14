@@ -56,12 +56,12 @@ function startDeTipeo(parametro) {     ///Borra contenido de html
                 velocidadDeTipeoTemporal = 0;
             }
             else {
-                velocidadDeTipeoTemporal = (Math.random() * velocidadDeTipeo) + 10 //35 velocidad bastante real
+                velocidadDeTipeoTemporal = (Math.random() * velocidadDeTipeo) - 10 //35 velocidad bastante real
             }
             parametro.innerHTML += HTML[posicionDelCursor];
         }
         if (sobreEscribirTag === true && HTML[posicionDelCursor] === ">") { //comienza el borrado de los tags 
-            velocidadDeTipeoTemporal = (Math.random() * velocidadDeTipeo) + 10; //35 velocidad bastante real
+            velocidadDeTipeoTemporal = (Math.random() * velocidadDeTipeo) - 10; //35 velocidad bastante real
             sobreEscribirTag = false;
             if (tagAbierto) {
                 var nuevoSpan = document.createElement("span");
