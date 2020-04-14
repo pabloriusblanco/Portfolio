@@ -1,6 +1,7 @@
 function listeners() {
     reproduccionGifs();
     hoversConectados();
+    emailClipboard()
 }
 
 function reproduccionGifs() {
@@ -71,5 +72,38 @@ function hoversConectados() {
             })
         }
     }
+}
+
+////////////////////////
+/////// CLIPBOARD ///////
+////////////////////////
+
+function emailClipboard() {
+    let logoCopiar = document.querySelector(".emailboton_contenedor");
+    logoCopiar.addEventListener("click", function listenerEmail() {
+        logoCopiar.removeEventListener("click", listenerEmail);
+        copiarTexto();
+        document.querySelector(".textoCopiado").style.display = "block";
+        document.querySelector(".textoCopiado").classList.add("pulsaOpacidad");
+        document.querySelector(".botoncopiar").setAttribute("class", "botoncopiar desaparece1s") 
+        setTimeout(() => {
+            document.querySelector(".textoCopiado").style.display = "none";
+            document.querySelector(".botoncopiar").setAttribute("class", "botoncopiar aparece1s")
+            emailClipboard();
+        }, 4000);   
+    });
+};
+
+
+function copiarTexto() {
+    const el = document.createElement('textarea');
+    el.value = "pabloriusblanco@gmail.com";
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
 }
 

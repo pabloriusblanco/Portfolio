@@ -90,13 +90,16 @@
     margin-bottom: 2em;
     margin-top: 4em;
     .proyectonombrecontenedor {
+      width: 80%;
+      background-color: $negrofondo;
+      border-radius: 0 0 15px 15px;
       .nombreproyecto {
         margin: 12px;
         text-align: center;
         font-family: $montserrat;
         font-size: 1em;
         font-weight: 600;
-        color: $negrofondo;
+        color: $lightyellow;
       }
     }
     .contenidoproyecto {
@@ -154,7 +157,6 @@
       }
       .tecnologiasutilizadas {
         width: 95%;
-        border-top: 2px solid $negrofondo;
         border-bottom: 2px solid $negrofondo;
         display: flex;
         justify-content: center;
@@ -330,6 +332,13 @@
     background-color: $negrofondo;
     padding: 1em 0;
     border-radius: 0.5em;
+    .textoCopiado {
+      position: absolute;
+      background-color: $negrofondo;
+      width: 80%;
+      display: none;
+      opacity: 0;
+    }
     .email {
       margin: 0 2vw;
       text-align: center;

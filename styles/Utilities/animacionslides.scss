@@ -43,79 +43,77 @@
   }
 }
 
-
 /////SLIDE DESDE ARRIBA PARA GIF PREVIEW
 
 .slideDeArribaStart {
-	-webkit-animation: slideDeArribaStart 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slideDeArribaStart 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slideDeArribaStart 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slideDeArribaStart 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
- @-webkit-keyframes slideDeArribaStart {
+@-webkit-keyframes slideDeArribaStart {
   0% {
     -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
     opacity: 1;
   }
   100% {
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
 }
 @keyframes slideDeArribaStart {
   0% {
     -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
     opacity: 1;
   }
   100% {
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
 }
 
 .slideDeArribaEnd {
-	-webkit-animation: slideDeArribaEnd 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slideDeArribaEnd 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slideDeArribaEnd 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slideDeArribaEnd 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
- @-webkit-keyframes slideDeArribaEnd {
+@-webkit-keyframes slideDeArribaEnd {
   0% {
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
   75% {
     -webkit-transform: translateY(-75%);
-            transform: translateY(-75%);
+    transform: translateY(-75%);
     opacity: 1;
   }
   100% {
     -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
     opacity: 1;
   }
 }
 @keyframes slideDeArribaEnd {
   0% {
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
   75% {
     -webkit-transform: translateY(-75%);
-            transform: translateY(-75%);
+    transform: translateY(-75%);
     opacity: 1;
   }
   100% {
     -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
     opacity: 1;
   }
 }
-
 
 ///////////////////////
 ///////HAMACA TOP//////
@@ -482,5 +480,43 @@
   }
   100% {
     transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+/////////////////////////
+////OPACIDAD Y PULSA////
+/////////////////////////
+
+.pulsaOpacidad {
+  -webkit-animation: pulsaOpacidad 4s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: pulsaOpacidad 4s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes pulsaOpacidad {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulsaOpacidad {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

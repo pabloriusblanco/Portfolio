@@ -388,6 +388,28 @@
     transform: translateX(-25%) translateZ(0) scaleY(1); }
   100% {
     transform: translateX(-50%) translateZ(0) scaleY(1); } }
+.pulsaOpacidad {
+  -webkit-animation: pulsaOpacidad 4s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: pulsaOpacidad 4s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
+
+@-webkit-keyframes pulsaOpacidad {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes pulsaOpacidad {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 html {
   scroll-behavior: smooth; }
 
@@ -717,13 +739,17 @@ footer {
     width: 80%;
     margin-bottom: 2em;
     margin-top: 4em; }
-    .proyectos_contenedor .proyectocontenedor .proyectonombrecontenedor .nombreproyecto {
-      margin: 12px;
-      text-align: center;
-      font-family: "Montserrat", sans-serif;
-      font-size: 1em;
-      font-weight: 600;
-      color: #1e1e1e; }
+    .proyectos_contenedor .proyectocontenedor .proyectonombrecontenedor {
+      width: 80%;
+      background-color: #1e1e1e;
+      border-radius: 0 0 15px 15px; }
+      .proyectos_contenedor .proyectocontenedor .proyectonombrecontenedor .nombreproyecto {
+        margin: 12px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        color: #fffaec; }
     .proyectos_contenedor .proyectocontenedor .contenidoproyecto {
       display: flex;
       flex-direction: column;
@@ -773,7 +799,6 @@ footer {
           border-radius: 15px; }
       .proyectos_contenedor .proyectocontenedor .contenidoproyecto .tecnologiasutilizadas {
         width: 95%;
-        border-top: 2px solid #1e1e1e;
         border-bottom: 2px solid #1e1e1e;
         display: flex;
         justify-content: center; }
@@ -894,6 +919,12 @@ footer {
     background-color: #1e1e1e;
     padding: 1em 0;
     border-radius: 0.5em; }
+    .contacto_contenedor .emailboton_contenedor .textoCopiado {
+      position: absolute;
+      background-color: #1e1e1e;
+      width: 80%;
+      display: none;
+      opacity: 0; }
     .contacto_contenedor .emailboton_contenedor .email {
       margin: 0 2vw;
       text-align: center;
