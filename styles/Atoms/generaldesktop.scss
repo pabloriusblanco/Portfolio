@@ -22,34 +22,29 @@
 
   .aboutme_contenedor {
     .contenido_aboutme {
+      //CAMBIO
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
       .vectorialprb_contenedor {
         .circulocontenedor {
+          //CAMBIO
           width: 40vw;
           height: 40vw;
           margin-right: 1em;
         }
       }
       .contenedor_linksytexto {
+        //CAMBIO
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        .contenedorlinksaboutme {
-          display: flex;
-          justify-content: space-around;
-          margin: 0 0 1em 0;
-          .contenedorlink {
-            padding: 0.5em 0.5em;
-            margin: 0 0;
-          }
-        }
       }
     }
   }
+
   %separador_animacion {
     background-repeat: repeat-x;
     background-position: 0 bottom;
@@ -74,10 +69,10 @@
     .proyectocontenedor {
       margin-bottom: 4em; //CAMBIO
       .contenidoproyecto {
-        flex-direction: row; //CAMBIO
+        flex-direction: column; //CAMBIO
         align-items: center; // CAMBIO
         .contenedorgifproyecto {
-          min-width: 45vw; // CAMBIO
+          width: 65vw; // CAMBIO
           .videoOpacity {
             //REVISAR
             position: absolute;
@@ -106,17 +101,31 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin-left: 2em; // SE AGREGO
+          width: 55vw;
           .proyectonombrecontenedor {
-            width: 100%; //CAMBIO
-            border-radius: 8px; ///CAMBIO
+            width: 95%; //CAMBIO
+            border-radius: 0 0 8px 8px; ///CAMBIO
             // padding-left: 12%; ///SE AGREGO
           }
           .tecnologiasutilizadas {
+            width: 90%;
             i {
               font-size: 1.5em; //OJO
             }
           }
+        }
+      }
+    }
+  }
+
+  .aboutme_contenedor {
+    .contenido_aboutme {
+      .vectorialprb_contenedor {
+        .circulocontenedor {
+          //CAMBIO
+          width: 30vw;
+          height: 30vw;
+          margin-right: 1em;
         }
       }
     }
@@ -131,8 +140,43 @@
   .proyectos_contenedor {
     .proyectocontenedor {
       .contenidoproyecto {
+        flex-direction: row; //CAMBIO
+        align-items: center; // CAMBIO
         .contenedorgifproyecto {
           min-width: 55vw; // CAMBIO
+        }
+        .info_proyecto {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 2em; // SE AGREGO
+          .proyectonombrecontenedor {
+            width: 100%; //CAMBIO
+            border-radius: 8px 8px 8px 8px; ///CAMBIO
+            // padding-left: 12%; ///SE AGREGO
+          }
+          .tecnologiasutilizadas {
+            i {
+              font-size: 1.5em; //OJO
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only all and (min-width: 1440px) {
+  ///////////////////////
+  ///////PROYECTOS///////
+  ///////////////////////
+
+  .proyectos_contenedor {
+    .proyectocontenedor {
+      .contenidoproyecto {
+        .contenedorgifproyecto {
+          min-width: 45vw; // CAMBIO
         }
       }
     }
