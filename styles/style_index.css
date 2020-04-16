@@ -698,6 +698,7 @@ footer {
   .presentacion_contenedor .posicionesseparador {
     opacity: 0;
     width: 100%;
+    max-width: 763px;
     background-color: #fffaec;
     margin: 0.3em 0; }
     .presentacion_contenedor .posicionesseparador .posiciones_texto {
@@ -709,6 +710,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 500px;
     overflow: hidden; }
     .presentacion_contenedor .redes_contenedor .contenedor_logo_presentacion {
       display: flex;
@@ -742,7 +744,7 @@ footer {
     .proyectos_contenedor .proyectocontenedor .proyectonombrecontenedor {
       width: 80%;
       background-color: #1e1e1e;
-      border-radius: 0 0 15px 15px; }
+      border-radius: 0 0 8px 8px; }
       .proyectos_contenedor .proyectocontenedor .proyectonombrecontenedor .nombreproyecto {
         margin: 12px;
         text-align: center;
@@ -797,25 +799,30 @@ footer {
           height: 100%;
           width: 100%;
           border-radius: 15px; }
-      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .tecnologiasutilizadas {
-        width: 95%;
-        border-bottom: 2px solid #1e1e1e;
+      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto {
         display: flex;
-        justify-content: center; }
-        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .tecnologiasutilizadas i {
-          color: #1e1e1e;
-          margin: 8px 0.5em;
-          font-size: 2em; }
-      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .textoproyecto_contenedor {
-        width: 95%; }
-      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorlinks .contenedorlink i {
-        color: #fffaec; }
-      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorlinks .contenedorlink .fa-github-square {
-        font-size: 20px; }
-      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorlinks .contenedorlink .fa-laptop {
-        translate: 0px 3px; }
-      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorlinks .contenedorlink a {
-        color: #fffaec; }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .tecnologiasutilizadas {
+          width: 95%;
+          border-bottom: 2px solid #1e1e1e;
+          display: flex;
+          justify-content: center; }
+          .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .tecnologiasutilizadas i {
+            color: #1e1e1e;
+            margin: 8px 0.5em;
+            font-size: 1.5em; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .textoproyecto_contenedor {
+          width: 95%; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .contenedorlinks .contenedorlink i {
+          color: #fffaec; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .contenedorlinks .contenedorlink .fa-github-square {
+          font-size: 20px; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .contenedorlinks .contenedorlink .fa-laptop {
+          translate: 0px 3px; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .contenedorlinks .contenedorlink a {
+          color: #fffaec; }
 
 .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 {
   cursor: unset; }
@@ -1003,10 +1010,57 @@ footer {
         justify-content: space-around;
         margin: 0 0 1em 0; }
         .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinksaboutme .contenedorlink {
-          background-color: transparent;
           padding: 0.5em 0.5em;
-          border-radius: 0px;
-          transition: transform 0.3s ease;
-          margin: 0 0; } }
+          margin: 0 0; }
+
+  .separador_contenedor .separador {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 80vw; } }
+@media only all and (min-width: 768px) {
+  .separador_contenedor .separador {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 50vw; } }
+@media only all and (min-width: 1000px) {
+  .proyectos_contenedor .proyectocontenedor {
+    margin-bottom: 4em; }
+    .proyectos_contenedor .proyectocontenedor .contenidoproyecto {
+      flex-direction: row;
+      align-items: center; }
+      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto {
+        min-width: 45vw; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity {
+          position: absolute;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          height: 30%;
+          width: 30%;
+          background-color: #1e1e1e;
+          border-radius: 15px; }
+          .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity .fa-play {
+            opacity: 0.5;
+            color: #fffaec;
+            font-size: 5vw; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .preview {
+          height: 100%;
+          width: 100%;
+          border-radius: 15px; }
+      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2em; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .proyectonombrecontenedor {
+          width: 100%;
+          border-radius: 8px; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .tecnologiasutilizadas i {
+          font-size: 1.5em; } }
+@media only all and (min-width: 1300px) {
+  .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto {
+    min-width: 55vw; } }
 
 /*# sourceMappingURL=style_index.css.map */

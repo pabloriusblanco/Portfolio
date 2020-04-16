@@ -36,6 +36,7 @@
   .posicionesseparador {
     opacity: 0;
     width: 100%;
+    max-width: 763px;
     background-color: $lightyellow;
     margin: 0.3em 0;
     .posiciones_texto {
@@ -49,6 +50,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 500px;
     overflow: hidden;
     .contenedor_logo_presentacion {
       display: flex;
@@ -92,7 +94,7 @@
     .proyectonombrecontenedor {
       width: 80%;
       background-color: $negrofondo;
-      border-radius: 0 0 15px 15px;
+      border-radius: 0 0 8px 8px;
       .nombreproyecto {
         margin: 12px;
         text-align: center;
@@ -155,33 +157,39 @@
           border-radius: 15px;
         }
       }
-      .tecnologiasutilizadas {
-        width: 95%;
-        border-bottom: 2px solid $negrofondo;
+      .info_proyecto {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        i {
-          color: $negrofondo;
-          margin: 8px 0.5em;
-          font-size: 2em;
-        }
-      }
-      .textoproyecto_contenedor {
-        width: 95%;
-      }
-      .contenedorlinks {
-        .contenedorlink {
+        align-items: center;
+        .tecnologiasutilizadas {
+          width: 95%;
+          border-bottom: 2px solid $negrofondo;
+          display: flex;
+          justify-content: center;
           i {
-            color: $lightyellow;
+            color: $negrofondo;
+            margin: 8px 0.5em;
+            font-size: 1.5em;
           }
-          .fa-github-square {
-            font-size: 20px;
-          }
-          .fa-laptop {
-            translate: 0px 3px;
-          }
-          a {
-            color: $lightyellow;
+        }
+        .textoproyecto_contenedor {
+          width: 95%;
+        }
+        .contenedorlinks {
+          .contenedorlink {
+            i {
+              color: $lightyellow;
+            }
+            .fa-github-square {
+              font-size: 20px;
+            }
+            .fa-laptop {
+              translate: 0px 3px;
+            }
+            a {
+              color: $lightyellow;
+            }
           }
         }
       }

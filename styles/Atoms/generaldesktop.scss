@@ -43,15 +43,17 @@
           justify-content: space-around;
           margin: 0 0 1em 0;
           .contenedorlink {
-            background-color: transparent;
             padding: 0.5em 0.5em;
-            border-radius: 0px;
-            transition: transform 0.3s ease;
             margin: 0 0;
           }
         }
       }
     }
+  }
+  %separador_animacion {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 80vw;
   }
 }
 
@@ -59,11 +61,80 @@
 ///////////////DESKTOP///////////////
 /////////////////////////////////////
 
-
 @media only all and (min-width: 768px) {
-
-
-
-
+  %separador_animacion {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 50vw;
+  }
 }
 
+@media only all and (min-width: 1000px) {
+  .proyectos_contenedor {
+    .proyectocontenedor {
+      margin-bottom: 4em; //CAMBIO
+      .contenidoproyecto {
+        flex-direction: row; //CAMBIO
+        align-items: center; // CAMBIO
+        .contenedorgifproyecto {
+          min-width: 45vw; // CAMBIO
+          .videoOpacity {
+            //REVISAR
+            position: absolute;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            height: 30%;
+            width: 30%;
+            background-color: $negrofondo;
+            border-radius: 15px;
+            .fa-play {
+              opacity: 0.5;
+              color: $lightyellow;
+              font-size: 5vw;
+            }
+          }
+          .preview {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+          }
+        }
+        .info_proyecto {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 2em; // SE AGREGO
+          .proyectonombrecontenedor {
+            width: 100%; //CAMBIO
+            border-radius: 8px; ///CAMBIO
+            // padding-left: 12%; ///SE AGREGO
+          }
+          .tecnologiasutilizadas {
+            i {
+              font-size: 1.5em; //OJO
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only all and (min-width: 1300px) {
+  ///////////////////////
+  ///////PROYECTOS///////
+  ///////////////////////
+
+  .proyectos_contenedor {
+    .proyectocontenedor {
+      .contenidoproyecto {
+        .contenedorgifproyecto {
+          min-width: 55vw; // CAMBIO
+        }
+      }
+    }
+  }
+}
