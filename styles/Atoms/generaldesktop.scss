@@ -3,6 +3,17 @@
 ///////////         600            //////////
 ///////////                        //////////
 /////////////////////////////////////////////
+@media only all and (min-width: 330px) {
+  .presentacion_contenedor {
+    .redes_contenedor {
+      .contenedor_logo_presentacion {
+        h4 {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
 
 @media only all and (min-width: 600px) {
   .comienzo_contenedor {
@@ -122,41 +133,42 @@
       }
     }
   }
-}
 
-.mainbody {
-  .proyectos_contenedor {
-    .proyectocontenedor {
-      .contenidoproyecto3 {
-        .contenedorgifproyecto3 {
-          .videoOpacity {
-            height: 20%;
+  .mainbody {
+    .proyectos_contenedor {
+      .proyectocontenedor {
+        .contenidoproyecto3 {
+          .contenedorgifproyecto3 {
+            .videoOpacity {
+              height: 20%;
+            }
           }
         }
       }
     }
   }
-}
 
-.contacto_contenedor {
-  .contenedorBotonyTextoContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .logoytexto_contenedor {
-      width: 65vw;
-    }
-    .emailboton_contenedor {
-      width: 65vw; //cambio
-      .email {
-        margin: 0 0.5em;
+  .contacto_contenedor {
+    .contenedorBotonyTextoContacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      .logoytexto_contenedor {
+        width: 65vw;
       }
-      .botoncopiar {
-        margin: 0 0.5em;
-      }
-      .textoCopiado {
-        width: 60%; //cambio
+      .emailboton_contenedor {
+        width: 65vw; //cambio
+        .email {
+          margin: 0 0.5em;
+        }
+        .botoncopiar {
+          margin: 0 0.5em;
+        }
+        .textoCopiado {
+          width: 60%; //cambio
+        }
       }
     }
   }
@@ -357,29 +369,28 @@
     }
   }
 
-
-.contacto_contenedor {
-  .contenedorBotonyTextoContacto {
-    .logoytexto_contenedor {
-      width: 30vw; //cambio
-      margin-right: 1em;
-      margin-top: 0;
-    }
-    .emailboton_contenedor {
-      margin: 0 0 0 1em;
-      width: 30vw; //cambio
-      .email {
-        margin: 0 1em;
+  .contacto_contenedor {
+    .contenedorBotonyTextoContacto {
+      .logoytexto_contenedor {
+        width: 30vw; //cambio
+        margin-right: 1em;
+        margin-top: 0;
       }
-      .botoncopiar {
-        margin: 0 1em;
-      }
-      .textoCopiado {
-        width: 25%; //cambio
+      .emailboton_contenedor {
+        margin: 0 0 0 1em;
+        width: 30vw; //cambio
+        .email {
+          margin: 0 1em;
+        }
+        .botoncopiar {
+          margin: 0 1em;
+        }
+        .textoCopiado {
+          width: 25%; //cambio
+        }
       }
     }
   }
-}
 }
 
 /////////////////////////////////////////////
@@ -460,5 +471,4 @@
       }
     }
   }
-  }
-  
+}

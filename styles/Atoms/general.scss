@@ -62,7 +62,7 @@
         cursor: pointer;
         font-family: $montserrat;
         color: $lightyellow;
-        font-size: 0.8em;
+        font-size: 0.5em;
         opacity: 0.5;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         &:hover {
@@ -73,6 +73,7 @@
     }
   }
 }
+
 
 ///////////////////////
 ///////PROYECTOS///////
@@ -325,10 +326,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 95vw;
     .logoytexto_contenedor {
       display: flex;
       justify-content: center;
-      width: 85vw;
+      width: 85%;
       .contenedorlogomail {
         display: flex;
         justify-content: center;
