@@ -846,7 +846,7 @@ footer {
       font-weight: 600; }
 
 .aboutme_contenedor {
-  min-height: 100vh;
+  min-height: 75vh;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -910,6 +910,149 @@ footer {
   .contacto_contenedor .contactonombre_contenedor {
     padding-top: 3em;
     margin-bottom: 3em; }
+  .contacto_contenedor .contenedorBotonyTextoContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .logoytexto_contenedor {
+      display: flex;
+      justify-content: center;
+      width: 85vw; }
+      .contacto_contenedor .contenedorBotonyTextoContacto .logoytexto_contenedor .contenedorlogomail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 12px;
+        border-right: 2px solid #1e1e1e; }
+        .contacto_contenedor .contenedorBotonyTextoContacto .logoytexto_contenedor .contenedorlogomail .fas {
+          font-size: 3em;
+          color: #1e1e1e; }
+      .contacto_contenedor .contenedorBotonyTextoContacto .logoytexto_contenedor .textocontacto span {
+        font-weight: 600;
+        cursor: pointer; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor {
+      margin: 2em 0;
+      width: 85vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1e1e1e;
+      padding: 1em 0;
+      border-radius: 0.5em; }
+      .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .textoCopiado {
+        position: absolute;
+        background-color: #1e1e1e;
+        width: 80%;
+        display: none;
+        opacity: 0; }
+      .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .email {
+        margin: 0 2vw;
+        text-align: center;
+        color: #fffaec;
+        font-family: "BenchNine", sans-serif;
+        margin: 0 2vw;
+        font-size: 1.5em; }
+      .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .botoncopiar {
+        margin: 0 2vw;
+        cursor: pointer; }
+        .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .botoncopiar .fas {
+          font-size: 1.5em;
+          color: #fffaec; }
+          .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .botoncopiar .fas:hover {
+            -webkit-animation: pulsacion 0.5s ease-in-out infinite both;
+            animation: pulsacion 0.5s ease-in-out infinite both; }
+
+.separador1_contenedor {
+  bottom: -1px;
+  height: 15vh;
+  position: relative; }
+  .separador1_contenedor .separador1 {
+    background-image: url("../img/1-1.svg"); }
+  .separador1_contenedor .separador2 {
+    background-image: url("../img/1-2.svg"); }
+  .separador1_contenedor .separador3 {
+    background-image: url("../img/1-3.svg"); }
+
+.separador2_contenedor {
+  background-color: #fffaec;
+  bottom: 0px;
+  position: relative; }
+  .separador2_contenedor .separador {
+    bottom: -1px; }
+  .separador2_contenedor .separador1 {
+    background-image: url("../img/2-1.svg"); }
+  .separador2_contenedor .separador2 {
+    background-image: url("../img/2-2.svg"); }
+  .separador2_contenedor .separador3 {
+    background-image: url("../img/2-3.svg"); }
+
+@media only all and (min-width: 600px) {
+  .comienzo_contenedor .comienzotexto_contenedor .textopredeterminado {
+    transform: translateY(75%);
+    position: relative;
+    width: 50%;
+    height: 50%; }
+
+  .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity {
+    height: 20%;
+    width: 20%; }
+    .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity .fa-play {
+      font-size: 4.5vw; }
+
+  .subtitulo .textosubtitulo {
+    font-size: 2.5em; }
+
+  .aboutme_contenedor .contenido_aboutme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
+      width: 40vw;
+      height: 40vw;
+      margin-right: 1em; }
+    .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinks .contenedorlink {
+        margin: 0 0; }
+
+  .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
+    height: 20%; }
+    .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity p {
+      padding: 0 1em; }
+
+  .separador_contenedor .separador {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 80vw; } }
+@media only all and (min-width: 768px) {
+  .separador_contenedor .separador {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 50vw; }
+
+  .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity {
+    height: 20%;
+    width: 20%; }
+    .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity .fa-play {
+      font-size: 4.5vw; } }
+.mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
+  height: 20%; }
+
+.contacto_contenedor {
+  background-color: #fffaec;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em; }
+  .contacto_contenedor .contactonombre_contenedor {
+    padding-top: 3em;
+    margin-bottom: 3em; }
   .contacto_contenedor .logoytexto_contenedor {
     display: flex;
     justify-content: center;
@@ -958,64 +1101,6 @@ footer {
           -webkit-animation: pulsacion 0.5s ease-in-out infinite both;
           animation: pulsacion 0.5s ease-in-out infinite both; }
 
-.separador1_contenedor {
-  bottom: -1px;
-  height: 15vh;
-  position: relative; }
-  .separador1_contenedor .separador1 {
-    background-image: url("../img/1-1.svg"); }
-  .separador1_contenedor .separador2 {
-    background-image: url("../img/1-2.svg"); }
-  .separador1_contenedor .separador3 {
-    background-image: url("../img/1-3.svg"); }
-
-.separador2_contenedor {
-  background-color: #fffaec;
-  bottom: 0px;
-  position: relative; }
-  .separador2_contenedor .separador {
-    bottom: -1px; }
-  .separador2_contenedor .separador1 {
-    background-image: url("../img/2-1.svg"); }
-  .separador2_contenedor .separador2 {
-    background-image: url("../img/2-2.svg"); }
-  .separador2_contenedor .separador3 {
-    background-image: url("../img/2-3.svg"); }
-
-@media only all and (min-width: 600px) {
-  .comienzo_contenedor .comienzotexto_contenedor .textopredeterminado {
-    transform: translateY(75%);
-    position: relative;
-    width: 50%;
-    height: 50%; }
-
-  .subtitulo .textosubtitulo {
-    font-size: 2.5em; }
-
-  .aboutme_contenedor .contenido_aboutme {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-    .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
-      width: 40vw;
-      height: 40vw;
-      margin-right: 1em; }
-    .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-
-  .separador_contenedor .separador {
-    background-repeat: repeat-x;
-    background-position: 0 bottom;
-    background-size: 80vw; } }
-@media only all and (min-width: 768px) {
-  .separador_contenedor .separador {
-    background-repeat: repeat-x;
-    background-position: 0 bottom;
-    background-size: 50vw; } }
 @media only all and (min-width: 1000px) {
   .proyectos_contenedor .proyectocontenedor {
     margin-bottom: 4em; }
@@ -1025,23 +1110,10 @@ footer {
       .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto {
         width: 65vw; }
         .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity {
-          position: absolute;
-          display: none;
-          align-items: center;
-          justify-content: center;
-          opacity: 0;
-          height: 30%;
-          width: 30%;
-          background-color: #1e1e1e;
-          border-radius: 15px; }
+          height: 15%;
+          width: 15%; }
           .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity .fa-play {
-            opacity: 0.5;
-            color: #fffaec;
-            font-size: 5vw; }
-        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .preview {
-          height: 100%;
-          width: 100%;
-          border-radius: 15px; }
+            font-size: 3vw; }
       .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto {
         display: flex;
         flex-direction: column;
@@ -1056,16 +1128,33 @@ footer {
           .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .tecnologiasutilizadas i {
             font-size: 1.5em; }
 
+  .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
+    height: 15%; }
+
   .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
-    width: 30vw;
-    height: 30vw;
-    margin-right: 1em; } }
+    width: 25vw;
+    height: 25vw;
+    margin-right: 2em; }
+  .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
+    max-width: 35vw; }
+    .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinks .contenedorlink {
+      margin: 0 2vw; } }
 @media only all and (min-width: 1300px) {
+  .separador_contenedor .separador {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 40vw; }
+
   .proyectos_contenedor .proyectocontenedor .contenidoproyecto {
     flex-direction: row;
     align-items: center; }
     .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto {
-      min-width: 55vw; }
+      min-width: 45vw; }
+      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity {
+        height: 12%;
+        width: 12%; }
+        .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity .fa-play {
+          font-size: 1.5vw; }
     .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto {
       display: flex;
       flex-direction: column;
@@ -1076,9 +1165,41 @@ footer {
         width: 100%;
         border-radius: 8px 8px 8px 8px; }
       .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .tecnologiasutilizadas i {
-        font-size: 1.5em; } }
+        font-size: 1.5em; }
+
+  .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
+    height: 12%; }
+
+  .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
+    width: 20vw;
+    height: 20vw;
+    margin-right: 3em; }
+  .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
+    max-width: 30vw; } }
 @media only all and (min-width: 1440px) {
+  .separador_contenedor .separador {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 35vw; }
+
   .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto {
-    min-width: 45vw; } }
+    min-width: 40vw; }
+    .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity {
+      height: 10%;
+      width: 10%; }
+      .proyectos_contenedor .proyectocontenedor .contenidoproyecto .contenedorgifproyecto .videoOpacity .fa-play {
+        font-size: 1.2vw; }
+  .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto {
+    width: 45vw; }
+
+  .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
+    height: 10%; }
+
+  .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
+    width: 18vw;
+    height: 18vw;
+    margin-right: 4em; }
+  .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
+    max-width: 25vw; } }
 
 /*# sourceMappingURL=style_index.css.map */

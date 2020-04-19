@@ -1,6 +1,8 @@
-/////////////////////////////////////
-///////////////TABLETS///////////////
-/////////////////////////////////////
+/////////////////////////////////////////////
+///////////                        //////////
+///////////         600            //////////
+///////////                        //////////
+/////////////////////////////////////////////
 
 @media only all and (min-width: 600px) {
   .comienzo_contenedor {
@@ -10,6 +12,23 @@
         position: relative;
         width: 50%;
         height: 50%;
+      }
+    }
+  }
+
+  .proyectos_contenedor {
+    .proyectocontenedor {
+      .contenidoproyecto {
+        .contenedorgifproyecto {
+          .videoOpacity {
+            //REVISAR
+            height: 20%; // CAMBIO
+            width: 20%; // CAMBIO
+            .fa-play {
+              font-size: 4.5vw; // CAMBIO
+            }
+          }
+        }
       }
     }
   }
@@ -41,9 +60,32 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        .contenedorlinks {
+          .contenedorlink {
+            margin: 0 0;
+          }
+        }
       }
     }
   }
+
+  .mainbody {
+    .proyectos_contenedor {
+      .proyectocontenedor {
+        .contenidoproyecto3 {
+          .contenedorgifproyecto3 {
+            .videoOpacity {
+              height: 20%;
+              p {
+              padding: 0 1em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
 
   %separador_animacion {
     background-repeat: repeat-x;
@@ -52,9 +94,17 @@
   }
 }
 
-/////////////////////////////////////
-///////////////DESKTOP///////////////
-/////////////////////////////////////
+
+
+
+
+
+
+/////////////////////////////////////////////
+///////////                        //////////
+///////////          768           //////////
+///////////                        //////////
+/////////////////////////////////////////////
 
 @media only all and (min-width: 768px) {
   %separador_animacion {
@@ -62,7 +112,118 @@
     background-position: 0 bottom;
     background-size: 50vw;
   }
+
+  .proyectos_contenedor {
+    .proyectocontenedor {
+      .contenidoproyecto {
+        .contenedorgifproyecto {
+          .videoOpacity {
+            //REVISAR
+            height: 20%; // CAMBIO
+            width: 20%; // CAMBIO
+            .fa-play {
+              font-size: 4.5vw; // CAMBIO
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
+.mainbody {
+  .proyectos_contenedor {
+    .proyectocontenedor {
+      .contenidoproyecto3 {
+        .contenedorgifproyecto3 {
+          .videoOpacity {
+            height: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contacto_contenedor {
+  background-color: $lightyellow;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  .contactonombre_contenedor {
+    padding-top: 3em;
+    margin-bottom: 3em;
+  }
+  .logoytexto_contenedor {
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    .contenedorlogomail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 12px;
+      border-right: 2px solid $negrofondo;
+      .fas {
+        font-size: 3em;
+        color: $negrofondo;
+      }
+    }
+    .textocontacto {
+      span {
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+  .emailboton_contenedor {
+    margin: 2em 0;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $negrofondo;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    .textoCopiado {
+      position: absolute;
+      background-color: $negrofondo;
+      width: 80%;
+      display: none;
+      opacity: 0;
+    }
+    .email {
+      margin: 0 2vw;
+      text-align: center;
+      color: $lightyellow;
+      font-family: $bench;
+      margin: 0 2vw;
+      font-size: 1.5em;
+    }
+    .botoncopiar {
+      margin: 0 2vw;
+      cursor: pointer;
+      .fas {
+        font-size: 1.5em;
+        color: $lightyellow;
+        &:hover {
+          -webkit-animation: pulsacion 0.5s ease-in-out infinite both;
+          animation: pulsacion 0.5s ease-in-out infinite both;
+        }
+      }
+    }
+  }
+}
+
+
+
+/////////////////////////////////////////////
+///////////                        //////////
+///////////          1000          //////////
+///////////                        //////////
+/////////////////////////////////////////////
 
 @media only all and (min-width: 1000px) {
   .proyectos_contenedor {
@@ -74,26 +235,11 @@
         .contenedorgifproyecto {
           width: 65vw; // CAMBIO
           .videoOpacity {
-            //REVISAR
-            position: absolute;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            height: 30%;
-            width: 30%;
-            background-color: $negrofondo;
-            border-radius: 15px;
+            height: 15%; // CAMBIO
+            width: 15%; // CAMBIO
             .fa-play {
-              opacity: 0.5;
-              color: $lightyellow;
-              font-size: 5vw;
+              font-size: 3vw; // CAMBIO
             }
-          }
-          .preview {
-            height: 100%;
-            width: 100%;
-            border-radius: 15px;
           }
         }
         .info_proyecto {
@@ -117,25 +263,66 @@
       }
     }
   }
+  .mainbody {
+    .proyectos_contenedor {
+      .proyectocontenedor {
+        .contenidoproyecto3 {
+          .contenedorgifproyecto3 {
+            .videoOpacity {
+              height: 15%;
+            }
+          }
+        }
+      }
+    }
+  }
 
   .aboutme_contenedor {
     .contenido_aboutme {
       .vectorialprb_contenedor {
         .circulocontenedor {
           //CAMBIO
-          width: 30vw;
-          height: 30vw;
-          margin-right: 1em;
+          width: 25vw;
+          height: 25vw;
+          margin-right: 2em;
+        }
+      }
+      .contenedor_linksytexto {
+        //CAMBIO
+        max-width: 35vw;
+        .contenedorlinks {
+          .contenedorlink {
+            margin: 0 2vw;
+          }
         }
       }
     }
   }
 }
 
+
+
+
+
+
+/////////////////////////////////////////////
+///////////                        //////////
+///////////          1300          //////////
+///////////                        //////////
+/////////////////////////////////////////////
+
+
+
 @media only all and (min-width: 1300px) {
   ///////////////////////
   ///////PROYECTOS///////
   ///////////////////////
+
+  %separador_animacion {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 40vw;
+  }
 
   .proyectos_contenedor {
     .proyectocontenedor {
@@ -143,7 +330,14 @@
         flex-direction: row; //CAMBIO
         align-items: center; // CAMBIO
         .contenedorgifproyecto {
-          min-width: 55vw; // CAMBIO
+          min-width: 45vw; // CAMBIO
+          .videoOpacity {
+            height: 12%; // CAMBIO
+            width: 12%; // CAMBIO
+            .fa-play {
+              font-size: 1.5vw; // CAMBIO
+            }
+          }
         }
         .info_proyecto {
           display: flex;
@@ -165,19 +359,101 @@
       }
     }
   }
+  .mainbody {
+    .proyectos_contenedor {
+      .proyectocontenedor {
+        .contenidoproyecto3 {
+          .contenedorgifproyecto3 {
+            .videoOpacity {
+              height: 12%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aboutme_contenedor {
+    .contenido_aboutme {
+      .vectorialprb_contenedor {
+        .circulocontenedor {
+          //CAMBIO
+          width: 20vw;
+          height: 20vw;
+          margin-right: 3em;
+        }
+      }
+      .contenedor_linksytexto {
+        //CAMBIO
+        max-width: 30vw;
+      }
+    }
+  }
 }
 
+
+
+
+/////////////////////////////////////////////
+///////////                        //////////
+///////////          1440          //////////
+///////////                        //////////
+/////////////////////////////////////////////
+
 @media only all and (min-width: 1440px) {
-  ///////////////////////
-  ///////PROYECTOS///////
-  ///////////////////////
+
+
+  %separador_animacion {
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 35vw;
+  }
 
   .proyectos_contenedor {
     .proyectocontenedor {
       .contenidoproyecto {
         .contenedorgifproyecto {
-          min-width: 45vw; // CAMBIO
+          min-width: 40vw; // CAMBIO
+          .videoOpacity {
+            height: 10%; // CAMBIO
+            width: 10%; // CAMBIO
+            .fa-play {
+              font-size: 1.2vw; // CAMBIO
+            }
+          }
         }
+        .info_proyecto {
+          width: 45vw;
+        }
+      }
+    }
+  }
+  .mainbody {
+    .proyectos_contenedor {
+      .proyectocontenedor {
+        .contenidoproyecto3 {
+          .contenedorgifproyecto3 {
+            .videoOpacity {
+              height: 10%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .aboutme_contenedor {
+    .contenido_aboutme {
+      .vectorialprb_contenedor {
+        .circulocontenedor {
+          //CAMBIO
+          width: 18vw;
+          height: 18vw;
+          margin-right: 4em;
+        }
+      }
+      .contenedor_linksytexto {
+        //CAMBIO
+        max-width: 25vw;
       }
     }
   }

@@ -235,7 +235,7 @@
 ///////////////////////
 
 .aboutme_contenedor {
-  min-height: 100vh;
+  min-height: 75vh;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -320,61 +320,67 @@
     padding-top: 3em;
     margin-bottom: 3em;
   }
-  .logoytexto_contenedor {
+  .contenedorBotonyTextoContacto {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 85vw;
-    .contenedorlogomail {
+    align-items: center;
+    .logoytexto_contenedor {
+      display: flex;
+      justify-content: center;
+      width: 85vw;
+      .contenedorlogomail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 12px;
+        border-right: 2px solid $negrofondo;
+        .fas {
+          font-size: 3em;
+          color: $negrofondo;
+        }
+      }
+      .textocontacto {
+        span {
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+    .emailboton_contenedor {
+      margin: 2em 0;
+      width: 85vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-right: 12px;
-      border-right: 2px solid $negrofondo;
-      .fas {
-        font-size: 3em;
-        color: $negrofondo;
-      }
-    }
-    .textocontacto {
-      span {
-        font-weight: 600;
-        cursor: pointer;
-      }
-    }
-  }
-  .emailboton_contenedor {
-    margin: 2em 0;
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $negrofondo;
-    padding: 1em 0;
-    border-radius: 0.5em;
-    .textoCopiado {
-      position: absolute;
       background-color: $negrofondo;
-      width: 80%;
-      display: none;
-      opacity: 0;
-    }
-    .email {
-      margin: 0 2vw;
-      text-align: center;
-      color: $lightyellow;
-      font-family: $bench;
-      margin: 0 2vw;
-      font-size: 1.5em;
-    }
-    .botoncopiar {
-      margin: 0 2vw;
-      cursor: pointer;
-      .fas {
-        font-size: 1.5em;
+      padding: 1em 0;
+      border-radius: 0.5em;
+      .textoCopiado {
+        position: absolute;
+        background-color: $negrofondo;
+        width: 80%;
+        display: none;
+        opacity: 0;
+      }
+      .email {
+        margin: 0 2vw;
+        text-align: center;
         color: $lightyellow;
-        &:hover {
-          -webkit-animation: pulsacion 0.5s ease-in-out infinite both;
-          animation: pulsacion 0.5s ease-in-out infinite both;
+        font-family: $bench;
+        margin: 0 2vw;
+        font-size: 1.5em;
+      }
+      .botoncopiar {
+        margin: 0 2vw;
+        cursor: pointer;
+        .fas {
+          font-size: 1.5em;
+          color: $lightyellow;
+          &:hover {
+            -webkit-animation: pulsacion 0.5s ease-in-out infinite both;
+            animation: pulsacion 0.5s ease-in-out infinite both;
+          }
         }
       }
     }
