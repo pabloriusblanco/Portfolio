@@ -77,7 +77,7 @@
             .videoOpacity {
               height: 20%;
               p {
-              padding: 0 1em;
+                padding: 0 1em;
               }
             }
           }
@@ -85,7 +85,6 @@
       }
     }
   }
-  
 
   %separador_animacion {
     background-repeat: repeat-x;
@@ -93,12 +92,6 @@
     background-size: 80vw;
   }
 }
-
-
-
-
-
-
 
 /////////////////////////////////////////////
 ///////////                        //////////
@@ -146,78 +139,28 @@
 }
 
 .contacto_contenedor {
-  background-color: $lightyellow;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 2em;
-  .contactonombre_contenedor {
-    padding-top: 3em;
-    margin-bottom: 3em;
-  }
-  .logoytexto_contenedor {
+  .contenedorBotonyTextoContacto {
     display: flex;
-    justify-content: center;
-    width: 85vw;
-    .contenedorlogomail {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-right: 12px;
-      border-right: 2px solid $negrofondo;
-      .fas {
-        font-size: 3em;
-        color: $negrofondo;
-      }
-    }
-    .textocontacto {
-      span {
-        font-weight: 600;
-        cursor: pointer;
-      }
-    }
-  }
-  .emailboton_contenedor {
-    margin: 2em 0;
-    width: 85%;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $negrofondo;
-    padding: 1em 0;
-    border-radius: 0.5em;
-    .textoCopiado {
-      position: absolute;
-      background-color: $negrofondo;
-      width: 80%;
-      display: none;
-      opacity: 0;
+    .logoytexto_contenedor {
+      width: 65vw;
     }
-    .email {
-      margin: 0 2vw;
-      text-align: center;
-      color: $lightyellow;
-      font-family: $bench;
-      margin: 0 2vw;
-      font-size: 1.5em;
-    }
-    .botoncopiar {
-      margin: 0 2vw;
-      cursor: pointer;
-      .fas {
-        font-size: 1.5em;
-        color: $lightyellow;
-        &:hover {
-          -webkit-animation: pulsacion 0.5s ease-in-out infinite both;
-          animation: pulsacion 0.5s ease-in-out infinite both;
-        }
+    .emailboton_contenedor {
+      width: 65vw; //cambio
+      .email {
+        margin: 0 0.5em;
+      }
+      .botoncopiar {
+        margin: 0 0.5em;
+      }
+      .textoCopiado {
+        width: 60%; //cambio
       }
     }
   }
 }
-
-
 
 /////////////////////////////////////////////
 ///////////                        //////////
@@ -298,20 +241,43 @@
       }
     }
   }
+
+  .contacto_contenedor {
+    .contactonombre_contenedor {
+      margin-bottom: 1.5em;
+    }
+    .contenedorBotonyTextoContacto {
+      display: flex;
+      flex-direction: row; //cambio
+      justify-content: center;
+      align-items: center;
+      .logoytexto_contenedor {
+        width: 40vw; //cambio
+        margin-right: 1em;
+        margin-top: 0;
+      }
+      .emailboton_contenedor {
+        margin: 0 0 0 1em;
+        width: 40vw; //cambio
+        .email {
+          margin: 0 1em;
+        }
+        .botoncopiar {
+          margin: 0 1em;
+        }
+        .textoCopiado {
+          width: 35%; //cambio
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
 
 /////////////////////////////////////////////
 ///////////                        //////////
 ///////////          1300          //////////
 ///////////                        //////////
 /////////////////////////////////////////////
-
-
 
 @media only all and (min-width: 1300px) {
   ///////////////////////
@@ -321,7 +287,7 @@
   %separador_animacion {
     background-repeat: repeat-x;
     background-position: 0 bottom;
-    background-size: 40vw;
+    background-size: 35vw;
   }
 
   .proyectos_contenedor {
@@ -375,6 +341,7 @@
 
   .aboutme_contenedor {
     .contenido_aboutme {
+      margin-bottom: 3em;
       .vectorialprb_contenedor {
         .circulocontenedor {
           //CAMBIO
@@ -389,10 +356,31 @@
       }
     }
   }
+
+
+.contacto_contenedor {
+  .contenedorBotonyTextoContacto {
+    .logoytexto_contenedor {
+      width: 30vw; //cambio
+      margin-right: 1em;
+      margin-top: 0;
+    }
+    .emailboton_contenedor {
+      margin: 0 0 0 1em;
+      width: 30vw; //cambio
+      .email {
+        margin: 0 1em;
+      }
+      .botoncopiar {
+        margin: 0 1em;
+      }
+      .textoCopiado {
+        width: 25%; //cambio
+      }
+    }
+  }
 }
-
-
-
+}
 
 /////////////////////////////////////////////
 ///////////                        //////////
@@ -401,8 +389,6 @@
 /////////////////////////////////////////////
 
 @media only all and (min-width: 1440px) {
-
-
   %separador_animacion {
     background-repeat: repeat-x;
     background-position: 0 bottom;
@@ -443,6 +429,7 @@
   }
   .aboutme_contenedor {
     .contenido_aboutme {
+      margin-bottom: 2em;
       .vectorialprb_contenedor {
         .circulocontenedor {
           //CAMBIO
@@ -457,4 +444,21 @@
       }
     }
   }
-}
+  .contacto_contenedor {
+    .contenedorBotonyTextoContacto {
+      .logoytexto_contenedor {
+        width: 25vw; //cambio
+        margin-right: 1em;
+        margin-top: 0;
+      }
+      .emailboton_contenedor {
+        margin: 0 0 0 1em;
+        width: 25vw; //cambio
+        .textoCopiado {
+          width: 20%; //cambio
+        }
+      }
+    }
+  }
+  }
+  

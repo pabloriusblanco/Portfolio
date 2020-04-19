@@ -933,7 +933,7 @@ footer {
         cursor: pointer; }
     .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor {
       margin: 2em 0;
-      width: 85vw;
+      width: 85%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -947,14 +947,13 @@ footer {
         display: none;
         opacity: 0; }
       .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .email {
-        margin: 0 2vw;
+        margin: 0 0.25em;
         text-align: center;
         color: #fffaec;
         font-family: "BenchNine", sans-serif;
-        margin: 0 2vw;
         font-size: 1.5em; }
       .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .botoncopiar {
-        margin: 0 2vw;
+        margin: 0 0.25em;
         cursor: pointer; }
         .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .botoncopiar .fas {
           font-size: 1.5em;
@@ -1043,63 +1042,21 @@ footer {
 .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
   height: 20%; }
 
-.contacto_contenedor {
-  background-color: #fffaec;
-  width: 100%;
+.contacto_contenedor .contenedorBotonyTextoContacto {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 2em; }
-  .contacto_contenedor .contactonombre_contenedor {
-    padding-top: 3em;
-    margin-bottom: 3em; }
-  .contacto_contenedor .logoytexto_contenedor {
-    display: flex;
-    justify-content: center;
-    width: 85vw; }
-    .contacto_contenedor .logoytexto_contenedor .contenedorlogomail {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-right: 12px;
-      border-right: 2px solid #1e1e1e; }
-      .contacto_contenedor .logoytexto_contenedor .contenedorlogomail .fas {
-        font-size: 3em;
-        color: #1e1e1e; }
-    .contacto_contenedor .logoytexto_contenedor .textocontacto span {
-      font-weight: 600;
-      cursor: pointer; }
-  .contacto_contenedor .emailboton_contenedor {
-    margin: 2em 0;
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1e1e1e;
-    padding: 1em 0;
-    border-radius: 0.5em; }
-    .contacto_contenedor .emailboton_contenedor .textoCopiado {
-      position: absolute;
-      background-color: #1e1e1e;
-      width: 80%;
-      display: none;
-      opacity: 0; }
-    .contacto_contenedor .emailboton_contenedor .email {
-      margin: 0 2vw;
-      text-align: center;
-      color: #fffaec;
-      font-family: "BenchNine", sans-serif;
-      margin: 0 2vw;
-      font-size: 1.5em; }
-    .contacto_contenedor .emailboton_contenedor .botoncopiar {
-      margin: 0 2vw;
-      cursor: pointer; }
-      .contacto_contenedor .emailboton_contenedor .botoncopiar .fas {
-        font-size: 1.5em;
-        color: #fffaec; }
-        .contacto_contenedor .emailboton_contenedor .botoncopiar .fas:hover {
-          -webkit-animation: pulsacion 0.5s ease-in-out infinite both;
-          animation: pulsacion 0.5s ease-in-out infinite both; }
+  justify-content: center;
+  align-items: center; }
+  .contacto_contenedor .contenedorBotonyTextoContacto .logoytexto_contenedor {
+    width: 65vw; }
+  .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor {
+    width: 65vw; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .email {
+      margin: 0 0.5em; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .botoncopiar {
+      margin: 0 0.5em; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .textoCopiado {
+      width: 60%; }
 
 @media only all and (min-width: 1000px) {
   .proyectos_contenedor .proyectocontenedor {
@@ -1138,12 +1095,33 @@ footer {
   .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
     max-width: 35vw; }
     .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto .contenedorlinks .contenedorlink {
-      margin: 0 2vw; } }
+      margin: 0 2vw; }
+
+  .contacto_contenedor .contactonombre_contenedor {
+    margin-bottom: 1.5em; }
+  .contacto_contenedor .contenedorBotonyTextoContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .logoytexto_contenedor {
+      width: 40vw;
+      margin-right: 1em;
+      margin-top: 0; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor {
+      margin: 0 0 0 1em;
+      width: 40vw; }
+      .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .email {
+        margin: 0 1em; }
+      .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .botoncopiar {
+        margin: 0 1em; }
+      .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .textoCopiado {
+        width: 35%; } }
 @media only all and (min-width: 1300px) {
   .separador_contenedor .separador {
     background-repeat: repeat-x;
     background-position: 0 bottom;
-    background-size: 40vw; }
+    background-size: 35vw; }
 
   .proyectos_contenedor .proyectocontenedor .contenidoproyecto {
     flex-direction: row;
@@ -1170,12 +1148,28 @@ footer {
   .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
     height: 12%; }
 
-  .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
-    width: 20vw;
-    height: 20vw;
-    margin-right: 3em; }
-  .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
-    max-width: 30vw; } }
+  .aboutme_contenedor .contenido_aboutme {
+    margin-bottom: 3em; }
+    .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
+      width: 20vw;
+      height: 20vw;
+      margin-right: 3em; }
+    .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
+      max-width: 30vw; }
+
+  .contacto_contenedor .contenedorBotonyTextoContacto .logoytexto_contenedor {
+    width: 30vw;
+    margin-right: 1em;
+    margin-top: 0; }
+  .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor {
+    margin: 0 0 0 1em;
+    width: 30vw; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .email {
+      margin: 0 1em; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .botoncopiar {
+      margin: 0 1em; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .textoCopiado {
+      width: 25%; } }
 @media only all and (min-width: 1440px) {
   .separador_contenedor .separador {
     background-repeat: repeat-x;
@@ -1195,11 +1189,23 @@ footer {
   .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
     height: 10%; }
 
-  .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
-    width: 18vw;
-    height: 18vw;
-    margin-right: 4em; }
-  .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
-    max-width: 25vw; } }
+  .aboutme_contenedor .contenido_aboutme {
+    margin-bottom: 2em; }
+    .aboutme_contenedor .contenido_aboutme .vectorialprb_contenedor .circulocontenedor {
+      width: 18vw;
+      height: 18vw;
+      margin-right: 4em; }
+    .aboutme_contenedor .contenido_aboutme .contenedor_linksytexto {
+      max-width: 25vw; }
+
+  .contacto_contenedor .contenedorBotonyTextoContacto .logoytexto_contenedor {
+    width: 25vw;
+    margin-right: 1em;
+    margin-top: 0; }
+  .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor {
+    margin: 0 0 0 1em;
+    width: 25vw; }
+    .contacto_contenedor .contenedorBotonyTextoContacto .emailboton_contenedor .textoCopiado {
+      width: 20%; } }
 
 /*# sourceMappingURL=style_index.css.map */
