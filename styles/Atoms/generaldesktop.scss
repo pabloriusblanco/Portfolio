@@ -40,6 +40,13 @@
             }
           }
         }
+        .info_proyecto {
+          .tecnologiasutilizadas {
+            img {
+              width: 7%;
+            }
+          }
+        }
       }
     }
   }
@@ -130,6 +137,13 @@
             }
           }
         }
+        .info_proyecto {
+          .tecnologiasutilizadas {
+            img {
+              width: 7%;
+            }
+          }
+        }
       }
     }
   }
@@ -210,8 +224,8 @@
           }
           .tecnologiasutilizadas {
             width: 90%;
-            i {
-              font-size: 1.5em; //OJO
+            img {
+              width: 8%;
             }
           }
         }
@@ -329,8 +343,8 @@
             // padding-left: 12%; ///SE AGREGO
           }
           .tecnologiasutilizadas {
-            i {
-              font-size: 1.5em; //OJO
+            img {
+              width: 12%;
             }
           }
         }
