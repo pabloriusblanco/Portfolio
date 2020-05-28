@@ -823,27 +823,6 @@ footer {
         .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .contenedorlinks .contenedorlink a {
           color: #fffaec; }
 
-.mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 {
-  cursor: unset; }
-  .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
-    position: absolute;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    width: auto;
-    height: 30%;
-    background-color: #1e1e1e;
-    border-radius: 15px; }
-    .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity p {
-      margin: 0 1em;
-      opacity: 1;
-      color: #fffaec;
-      text-transform: uppercase;
-      font-family: "Montserrat", sans-serif;
-      font-size: 0.8em;
-      font-weight: 600; }
-
 .aboutme_contenedor {
   min-height: 75vh;
   width: 80%;
@@ -1152,9 +1131,6 @@ footer {
         border-radius: 8px 8px 8px 8px; }
       .proyectos_contenedor .proyectocontenedor .contenidoproyecto .info_proyecto .tecnologiasutilizadas img {
         width: 12%; }
-
-  .mainbody .proyectos_contenedor .proyectocontenedor .contenidoproyecto3 .contenedorgifproyecto3 .videoOpacity {
-    height: 12%; }
 
   .aboutme_contenedor .contenido_aboutme {
     margin-bottom: 3em; }
